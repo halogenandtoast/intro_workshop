@@ -2,3 +2,7 @@
   <%= form.text_field :body, :placeholder => "Shout" %>
   <%= form.submit "Shout!" %>
 <% end %>
+
+<% @shouts.each do |shout| %>
+  <div><%= shout.body %></div>
+<% end %>

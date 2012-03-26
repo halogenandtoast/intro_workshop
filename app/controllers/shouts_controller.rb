@@ -1,6 +1,7 @@
 class ShoutsController < ApplicationController
   def index
     @shout = Shout.new
+    @shouts = Shout.all
   end
 
   def create
