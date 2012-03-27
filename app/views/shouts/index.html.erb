@@ -4,5 +4,5 @@
 <% end %>
 
 <% @shouts.each do |shout| %>
-  <div><%= shout.body %></div>
+  <div><%= shout.body %> <%= time_ago_in_words(shout.created_at) %></div>
 <% end %>
