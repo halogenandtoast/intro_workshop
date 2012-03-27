@@ -15,6 +15,4 @@
 <% end %>
 
 <h2>Shouts</h2>
-<% @shouts.each do |shout| %>
-  <div><%= shout.body %> <%= shout.user.email %> <%= time_ago_in_words(shout.created_at) %></div>
-<% end %>
+<%= render @shouts %>
