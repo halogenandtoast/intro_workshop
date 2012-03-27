@@ -4,6 +4,8 @@ class UsersController < ApplicationController
   end
 
   def create
-    # SAVE FORM DATA
+    user = User.new(params[:user])
+    user.save
+    redirect_to shouts_path
   end
 end
