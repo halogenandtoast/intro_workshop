@@ -3,3 +3,27 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .field_with_errors { display: inline; }
 .notice { color: #009000; }
+body {
+  font-family: Arial, Verdana, sans-serif;
+}
+a { color: #336699; }
+h1, h2 { padding: 0; margin: 10px 0; color: #336699; }
+h2 { font-size: 80%; font-weight: normal; text-transform: lowercase;}
+p { padding: 0; margin: 0 }
+.shout {
+  border-bottom: 1px solid #eee;
+  padding: 5px 0;
+}
+#shouts {
+  border-top: 1px solid #eee;
+}
+
+#header { text-align: right; text-transform: lowercase; }
+#header .logo { float: left; color: #336699; }
+#header .links { display: inline }
+
+.shout_user { font-weight: bold; float: left; }
+.shout_time { float: right; color: #999; }
+.shout_body {
+  clear: both;
+}

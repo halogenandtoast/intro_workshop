@@ -8,10 +8,24 @@
 </head>
 <body>
 
+  <div id="header">
+    <span class="logo">Shouter</span>
+    <% if signed_in? %>
+      Welcome <%= current_user.email %>
+      <div class="links">
+        <%= link_to "Sign out", sign_out_path, :method => :delete %>
+      </div>
+    <% else %>
+      <div class="links">
+        <%= link_to "Sign up", sign_up_path %>
+        <%= link_to "Sign in", sign_in_path %>
+      </div>
+    <% end %>
+  </div>
+
   <% if notice %>
     <p class="notice"><%= notice %></p>
   <% end %>
-
   <%= yield %>
 
 </body>

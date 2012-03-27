@@ -1,4 +1,9 @@
-<div>
-  <%= shout.user.email %> <%= time_ago_in_words(shout.created_at) %> ago
-  <p><%= shout.body %></p>
+<div class="shout">
+  <div class="shout_user">
+    <%= shout.user.email %>
+  </div>
+  <div class="shout_time">
+    <%= time_ago_in_words(shout.created_at) %> ago
+  </div>
+  <p class="shout_body"><%= shout.body %></p>
 </div>
