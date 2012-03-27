@@ -7,7 +7,7 @@
 <% end %>
 
 <% if signed_in? %>
-  <%= form_for(@shout) do |form| %>
+  <%= form_for(@shout, :remote => true) do |form| %>
     <%= render "form_errors", :errors => @shout.errors %>
     <%= form.text_field :body, :placeholder => "Shout" %>
     <%= form.submit "Shout!" %>
@@ -15,4 +15,6 @@
 <% end %>
 
 <h2>Shouts</h2>
-<%= render @shouts %>
+<div id="shouts">
+  <%= render @shouts %>
+</div>

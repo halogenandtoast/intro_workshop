@@ -7,7 +7,10 @@ class ShoutsController < ApplicationController
   def create
     @shout = current_user.shouts.new(params[:shout])
     if @shout.save
-      redirect_to shouts_path, :notice => "Shouted!"
+      respond_to do |format|
+        format.html { redirect_to shouts_path, :notice => "Shouted!" }
+        format.js
+      end
     else
       @shouts = Shout.current
       render :action => "index"
