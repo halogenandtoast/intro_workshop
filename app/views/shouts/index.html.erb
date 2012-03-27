@@ -1,5 +1,6 @@
 <%= link_to "Sign up", sign_up_path %>
 <%= link_to "Sign in", sign_in_path %>
+Welcome <%= current_user.email %>
 
 <%= form_for(@shout) do |form| %>
   <%= form.text_field :body, :placeholder => "Shout" %>
