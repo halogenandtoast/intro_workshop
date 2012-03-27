@@ -1,4 +1,5 @@
-<%= link_to "Sign up", new_user_path %>
+<%= link_to "Sign up", sign_up_path %>
+<%= link_to "Sign in", sign_in_path %>
 <%= form_for(@shout) do |form| %>
   <%= form.text_field :body, :placeholder => "Shout" %>
   <%= form.submit "Shout!" %>

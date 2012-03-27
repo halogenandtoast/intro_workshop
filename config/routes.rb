@@ -2,7 +2,10 @@ Shouter::Application.routes.draw do
   root :to => "shouts#index"
   resources :shouts, :only => [:index, :create]
   resources :users, :only => [:new, :create]
-  resource :session, :only => [:new]
+
+  get "sign_in" => "sessions#new"
+  post "sign_in" => "sessions#create"
+  get "sign_up" => "users#new"
 
   # get "shouts" => "shouts#index"
   # post "shouts" => "shouts#create"
