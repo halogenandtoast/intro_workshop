@@ -6,16 +6,19 @@
   <%= link_to "Sign in", sign_in_path %>
 <% end %>
 
-<%= form_for(@shout) do |form| %>
-  <% if @shout.errors.any? %>
-    <% @shout.errors.full_messages.each do |message| %>
-      <div><strong><%= message %></strong></div>
+<% if signed_in? %>
+  <%= form_for(@shout) do |form| %>
+    <% if @shout.errors.any? %>
+      <% @shout.errors.full_messages.each do |message| %>
+        <div><strong><%= message %></strong></div>
+      <% end %>
     <% end %>
+    <%= form.text_field :body, :placeholder => "Shout" %>
+    <%= form.submit "Shout!" %>
   <% end %>
-  <%= form.text_field :body, :placeholder => "Shout" %>
-  <%= form.submit "Shout!" %>
 <% end %>
 
+<h2>Shouts</h2>
 <% @shouts.each do |shout| %>
   <div><%= shout.body %> <%= shout.user.email %> <%= time_ago_in_words(shout.created_at) %></div>
 <% end %>
