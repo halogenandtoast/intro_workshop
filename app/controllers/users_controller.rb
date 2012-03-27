@@ -4,8 +4,11 @@ class UsersController < ApplicationController
   end
 
   def create
-    user = User.new(params[:user])
-    user.save
-    redirect_to shouts_path
+    @user = User.new(params[:user])
+    if @user.save
+      redirect_to shouts_path
+    else
+      render "new"
+    end
   end
 end

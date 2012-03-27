@@ -8,11 +8,7 @@
 
 <% if signed_in? %>
   <%= form_for(@shout) do |form| %>
-    <% if @shout.errors.any? %>
-      <% @shout.errors.full_messages.each do |message| %>
-        <div><strong><%= message %></strong></div>
-      <% end %>
-    <% end %>
+    <%= render "form_errors", :errors => @shout.errors %>
     <%= form.text_field :body, :placeholder => "Shout" %>
     <%= form.submit "Shout!" %>
   <% end %>
