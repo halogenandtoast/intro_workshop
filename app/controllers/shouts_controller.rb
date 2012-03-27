@@ -5,9 +5,13 @@ class ShoutsController < ApplicationController
   end
 
   def create
-    shout = current_user.shouts.new(params[:shout])
-    shout.save
-    redirect_to shouts_path
+    @shout = current_user.shouts.new(params[:shout])
+    if @shout.save
+      redirect_to shouts_path
+    else
+      @shouts = Shout.current
+      render :action => "index"
+    end
   end
 
 end
