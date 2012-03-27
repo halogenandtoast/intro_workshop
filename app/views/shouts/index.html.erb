@@ -1,6 +1,10 @@
-<%= link_to "Sign up", sign_up_path %>
-<%= link_to "Sign in", sign_in_path %>
-Welcome <%= current_user.email %>
+<% if signed_in? %>
+  Welcome <%= current_user.email %>
+  <%= link_to "Sign out", sign_out_path, :method => :delete %>
+<% else %>
+  <%= link_to "Sign up", sign_up_path %>
+  <%= link_to "Sign in", sign_in_path %>
+<% end %>
 
 <%= form_for(@shout) do |form| %>
   <%= form.text_field :body, :placeholder => "Shout" %>

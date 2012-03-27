@@ -6,6 +6,7 @@ Shouter::Application.routes.draw do
   get "sign_in" => "sessions#new"
   post "sign_in" => "sessions#create"
   get "sign_up" => "users#new"
+  delete "sign_out" => "sessions#destroy"
 
   # get "shouts" => "shouts#index"
   # post "shouts" => "shouts#create"
