@@ -1,4 +1,5 @@
 Shouter::Application.routes.draw do
+  root :to => "shouts#index"
   resources :shouts, :only => [:index, :create]
   resources :users, :only => [:new, :create]
 
