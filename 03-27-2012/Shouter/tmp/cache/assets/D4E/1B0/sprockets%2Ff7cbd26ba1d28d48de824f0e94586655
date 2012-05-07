@@ -1,0 +1,26 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332858513.89:@expires_in0:@value"Z	{"
+class"ProcessedAsset"logical_path"application.js"pathname"0$root/app/assets/javascripts/application.js"content_type"application/javascript"
+mtime"2012-03-26T16:37:02-03:00"lengthiI"digest"%119a79e36c2f0e41cef7e1826e0b26b1"source"I// This is a manifest file that'll be compiled into application.js, which will include all the files
+// listed below.
+//
+// Any JavaScript/Coffee file within this directory, lib/assets/javascripts, vendor/assets/javascripts,
+// or vendor/assets/javascripts of plugins, if any, can be referenced here using a relative path.
+//
+// It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
+// the compiled file.
+//
+// WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
+// GO AFTER THE REQUIRES BELOW.
+//
+
+
+
+;
+"dependency_digest"%39aac76e594f616e4f5ee30894620bdd"required_paths["m/Users/halogenandtoast/.rvm/gems/jruby-1.6.7/gems/jquery-rails-2.0.1/vendor/assets/javascripts/jquery.js"q/Users/halogenandtoast/.rvm/gems/jruby-1.6.7/gems/jquery-rails-2.0.1/vendor/assets/javascripts/jquery_ujs.js"4$root/app/assets/javascripts/sessions.js.coffee"2$root/app/assets/javascripts/shouts.js.coffee"1$root/app/assets/javascripts/users.js.coffee"0$root/app/assets/javascripts/application.js"dependency_paths[{"	path"!$root/app/assets/javascripts"
+mtime"2012-03-27T11:20:41-03:00"digest"%b223bacae169a25f35720630c5041333{"	path"0$root/app/assets/javascripts/application.js"
+mtime"2012-03-26T16:37:02-03:00"digest"%6da4ebe87dc3b8207b6e81d7335b58d1{"	path"m/Users/halogenandtoast/.rvm/gems/jruby-1.6.7/gems/jquery-rails-2.0.1/vendor/assets/javascripts/jquery.js"
+mtime"2012-03-26T13:59:02-03:00"digest"%bd486c8c80023b62482fa73f4c6a8e4c{"	path"q/Users/halogenandtoast/.rvm/gems/jruby-1.6.7/gems/jquery-rails-2.0.1/vendor/assets/javascripts/jquery_ujs.js"
+mtime"2012-03-26T13:59:02-03:00"digest"%1cf4e1154e260df4a35fae1ca245c24b{"	path"4$root/app/assets/javascripts/sessions.js.coffee"
+mtime"2012-03-27T11:20:41-03:00"digest"%6b7d15da56c9b5e72e591dce20abfd72{"	path"2$root/app/assets/javascripts/shouts.js.coffee"
+mtime"2012-03-26T16:38:51-03:00"digest"%6b7d15da56c9b5e72e591dce20abfd72{"	path"1$root/app/assets/javascripts/users.js.coffee"
+mtime"2012-03-27T10:21:21-03:00"digest"%6b7d15da56c9b5e72e591dce20abfd72"_version"%aa7d0db7619379e13b08335dee027df2

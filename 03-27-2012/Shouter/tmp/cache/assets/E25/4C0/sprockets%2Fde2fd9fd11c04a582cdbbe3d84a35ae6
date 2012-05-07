@@ -1,0 +1,3 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332857293.058:@expires_in0:@value"û{"
+class"StaticAsset"logical_path"rails.png"pathname"&$root/app/assets/images/rails.png"content_type"image/png"
+mtime"2012-03-26T16:37:02-03:00"lengthiö"digest"%d0ae7c8a4913724013bf8a90af26350c"_version"%aa7d0db7619379e13b08335dee027df2

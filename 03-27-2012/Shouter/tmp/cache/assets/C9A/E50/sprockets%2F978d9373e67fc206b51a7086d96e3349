@@ -1,0 +1,9 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332791032.307:@expires_in0:@value"L{"
+class"ProcessedAsset"logical_path"shouts.js"pathname"2$root/app/assets/javascripts/shouts.js.coffee"content_type"application/javascript"
+mtime"2012-03-26T16:38:51-03:00"lengthi%"digest"%571454e6b728ddcfb7fdc3b132066f5a"source"%(function() {
+
+
+
+}).call(this);
+"dependency_digest"%b74f7012b9ca43cf182111726c6d7445"required_paths["2$root/app/assets/javascripts/shouts.js.coffee"dependency_paths[{"	path"2$root/app/assets/javascripts/shouts.js.coffee"
+mtime"2012-03-26T16:38:51-03:00"digest"%6b7d15da56c9b5e72e591dce20abfd72"_version"%aa7d0db7619379e13b08335dee027df2

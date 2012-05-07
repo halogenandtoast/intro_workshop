@@ -1,0 +1,88 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332876550.426:@expires_in0:@value"n{"
+class"ProcessedAsset"logical_path"shouts.css"pathname"1$root/app/assets/stylesheets/shouts.css.scss"content_type"text/css"
+mtime"2012-03-27T16:29:09-03:00"lengthiN"digest"%fecba28d94a698812e1c6cac4617885e"source"N/* line 4, ../../app/assets/stylesheets/shouts.css.scss */
+.field_with_errors {
+  display: inline;
+}
+
+/* line 5, ../../app/assets/stylesheets/shouts.css.scss */
+.notice {
+  color: #009000;
+}
+
+/* line 6, ../../app/assets/stylesheets/shouts.css.scss */
+body {
+  font-family: Arial, Verdana, sans-serif;
+}
+
+/* line 9, ../../app/assets/stylesheets/shouts.css.scss */
+a {
+  color: #336699;
+}
+
+/* line 10, ../../app/assets/stylesheets/shouts.css.scss */
+h1, h2 {
+  padding: 0;
+  margin: 10px 0;
+  color: #336699;
+}
+
+/* line 11, ../../app/assets/stylesheets/shouts.css.scss */
+h2 {
+  font-size: 80%;
+  font-weight: normal;
+  text-transform: lowercase;
+}
+
+/* line 12, ../../app/assets/stylesheets/shouts.css.scss */
+p {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 13, ../../app/assets/stylesheets/shouts.css.scss */
+.shout {
+  border-bottom: 1px solid #eee;
+  padding: 5px 0;
+}
+
+/* line 17, ../../app/assets/stylesheets/shouts.css.scss */
+#shouts {
+  border-top: 1px solid #eee;
+}
+
+/* line 21, ../../app/assets/stylesheets/shouts.css.scss */
+#header {
+  text-align: right;
+  text-transform: lowercase;
+}
+
+/* line 22, ../../app/assets/stylesheets/shouts.css.scss */
+#header .logo {
+  float: left;
+  color: #336699;
+}
+
+/* line 23, ../../app/assets/stylesheets/shouts.css.scss */
+#header .links {
+  display: inline;
+}
+
+/* line 25, ../../app/assets/stylesheets/shouts.css.scss */
+.shout_user {
+  font-weight: bold;
+  float: left;
+}
+
+/* line 26, ../../app/assets/stylesheets/shouts.css.scss */
+.shout_time {
+  float: right;
+  color: #999;
+}
+
+/* line 27, ../../app/assets/stylesheets/shouts.css.scss */
+.shout_body {
+  clear: both;
+}
+"dependency_digest"%9107c3ebf9db1ac016f3aabf8187ce11"required_paths["1$root/app/assets/stylesheets/shouts.css.scss"dependency_paths[{"	path"1$root/app/assets/stylesheets/shouts.css.scss"
+mtime"2012-03-27T16:29:09-03:00"digest"%5d61f04e59c1f1859c33298bfe9825dc"_version"%aa7d0db7619379e13b08335dee027df2
