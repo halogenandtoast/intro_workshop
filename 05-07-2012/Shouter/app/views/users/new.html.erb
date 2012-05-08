@@ -1,4 +1,12 @@
 <%= form_for(@user) do |form| %>
+  <% if @user.errors.any? %>
+    Could not sign you up because:
+    <ul>
+      <% @user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  <% end %>
   <%= form.email_field :email, placeholder: "you@example.com" %>
   <%= form.submit %>
 <% end %>

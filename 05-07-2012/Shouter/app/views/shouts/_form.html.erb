@@ -1,0 +1,12 @@
+<%= form_for(shout) do |form| %>
+  <% if shout.errors.any? %>
+    <p>Shout couldn't be saved because:</p>
+    <ul>
+      <% shout.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  <% end %>
+  <%= form.text_field :body, placeholder: "Shout here" %>
+  <%= form.submit "Shout" %>
+<% end %>

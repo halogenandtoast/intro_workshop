@@ -1,17 +1,6 @@
 <% if signed_in? %>
-  Welcome <%= current_user.email %>
-  <%= link_to "Sign out", session_path, method: :delete %>
-<% else %>
-  <%= link_to "Sign up", new_user_path %>
-  <%= link_to "Sign in", new_session_path %>
+  <%= render "form", shout: @shout %>
 <% end %>
-<%= notice %>
-<%= form_for(@shout) do |form| %>
-  <%= form.text_field :body, placeholder: "Shout here" %>
-  <%= form.submit "Shout" %>
-<% end %>
-<% @shouts.each do |shout| %>
-  <div>
-    <%= shout.body %> - <%= time_ago_in_words(shout.created_at) %> ago
-  </div>
-<% end %>
+
+<%= render @shouts %>
+<%= will_paginate @shouts %>
