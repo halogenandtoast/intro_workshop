@@ -1,4 +1,9 @@
-<%= link_to "Sign up", new_user_path %>
+<% if signed_in? %>
+  Welcome <%= current_user.email %>
+<% else %>
+  <%= link_to "Sign up", new_user_path %>
+  <%= link_to "Sign in", new_session_path %>
+<% end %>
 <%= notice %>
 <%= form_for(@shout) do |form| %>
   <%= form.text_field :body, placeholder: "Shout here" %>

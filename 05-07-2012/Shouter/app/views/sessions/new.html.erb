@@ -1,0 +1,4 @@
+<%= form_for(:session, url: session_path) do |form| %>
+  <%= form.text_field :email, placeholder: "you@example.com" %>
+  <%= form.submit "Sign in" %>
+<% end %>
