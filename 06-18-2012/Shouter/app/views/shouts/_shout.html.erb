@@ -1,0 +1,6 @@
+<div>
+  <%= gravatar(shout.user) %>
+  <%= link_to shout.user.username, shout.user %> shouted:
+  <%= shout.body %>
+  <%= time_ago_in_words(shout.created_at) %> ago
+</div>

@@ -5,7 +5,7 @@ class SessionsController < ApplicationController
   def create
     user = User.find_by_email(params[:session][:email])
     if user
-      cookies.signed.permanent[:user_email] = user.email
+      sign_in(user)
     end
     redirect_to shouts_path
   end

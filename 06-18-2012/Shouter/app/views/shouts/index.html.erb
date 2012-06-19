@@ -2,22 +2,11 @@
   <h1>Shouter</h1>
 </header>
 
-<% if current_user %>
-  Welcome <%= current_user.username %>
-  <%= link_to "Sign out", session_path, method: :delete %>
-
+<% if signed_in? %>
   <%= form_for(@shout) do |form| %>
     <%= form.text_field :body, placeholder: "Shout here" %>
     <%= form.submit "Shout!" %>
   <% end %>
-<% else %>
-  <%= link_to "Sign up", new_user_path %>
-  <%= link_to "Sign in", new_session_path %>
 <% end %>
 
-<% @shouts.each do |shout| %>
-  <div>
-    <%= shout.body %>
-    <%= time_ago_in_words(shout.created_at) %> ago
-  </div>
-<% end %>
+<%= render @shouts %>
