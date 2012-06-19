@@ -2,9 +2,17 @@
   <h1>Shouter</h1>
 </header>
 
-<%= form_for(@shout) do |form| %>
-  <%= form.text_field :body, placeholder: "Shout here" %>
-  <%= form.submit "Shout!" %>
+<% if current_user %>
+  Welcome <%= current_user.username %>
+  <%= link_to "Sign out", session_path, method: :delete %>
+
+  <%= form_for(@shout) do |form| %>
+    <%= form.text_field :body, placeholder: "Shout here" %>
+    <%= form.submit "Shout!" %>
+  <% end %>
+<% else %>
+  <%= link_to "Sign up", new_user_path %>
+  <%= link_to "Sign in", new_session_path %>
 <% end %>
 
 <% @shouts.each do |shout| %>
