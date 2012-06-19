@@ -1,9 +1,11 @@
 class UsersController < ApplicationController
-  def new # SHOW THE FORM TO THE USER
+  def new
     @user = User.new
   end
 
-  def create # SAVE THE FORM DATA TO THE DATABASE
-
+  def create
+    user = User.new(params[:user])
+    user.save
+    redirect_to shouts_url
   end
 end
